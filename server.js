@@ -8,7 +8,7 @@ var app = express();
 
 //Creates a variable called server at port 3000 using the express framework
     //Obviously this variable server represents the server variable
-var server = app.listen(3000);
+var server = app.listen(process.env.PORT || 3000);
 
 //Tells the express framkework to host the files in public on the server
     //The word "static" hosts static files that do not change from the directory public
